@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { User, Lock, Eye, EyeOff, Plane } from 'lucide-vue-next'
+import { User, Lock, Eye, EyeOff } from 'lucide-vue-next'
 
 definePageMeta({ hideNav: true })
 
@@ -26,9 +26,8 @@ async function handleSubmit() {
   <div class="signin">
     <div class="signin__top">
       <div class="signin__logo">
-        <Plane :size="30" :stroke-width="1.75" />
+        <img src="/logo.png" alt="Susi Air" class="signin__logo-img" />
       </div>
-      <h1 class="signin__title">Susi Air Crew</h1>
       <p class="signin__subtitle">Your Complete Air Transport Solution</p>
     </div>
 
@@ -93,19 +92,22 @@ async function handleSubmit() {
   }
 
   &__logo {
-    width: 56px;
-    height: 56px;
+    width: auto;
+    height: 64px;
+    padding: 10px 20px;
     border-radius: 18px;
-    background: rgba(255, 255, 255, 0.12);
+    background: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: $space-lg;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
   }
 
-  &__title {
-    font-size: $fs-headline-lg;
-    font-weight: 800;
+  &__logo-img {
+    height: 100%;
+    width: auto;
+    display: block;
   }
 
   &__subtitle {
@@ -122,6 +124,12 @@ async function handleSubmit() {
     display: flex;
     flex-direction: column;
     gap: $space-lg;
+  }
+
+  &__error {
+    font-size: $fs-label-lg;
+    color: $color-danger;
+    margin: -4px 0 0;
   }
 
   &__submit {
