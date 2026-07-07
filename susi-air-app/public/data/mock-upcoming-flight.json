@@ -1,0 +1,11 @@
+{
+  "flight": {
+    "id": "flt-1042",
+    "date": "2026-06-01",
+    "time": "07:45",
+    "departure": { "icao": "WIHH", "city": "Jakarta (Halim)" },
+    "arrival": { "icao": "WICD", "city": "Pangandaran" },
+    "aircraft": "PK-ASI · Cessna 208B Grand Caravan",
+    "flightNumber": "SI-204"
+  }
+}
