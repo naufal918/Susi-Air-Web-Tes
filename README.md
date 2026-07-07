@@ -1,16 +1,15 @@
 # Susi Air Crew App
 
-Technical test buat posisi Frontend Developer di Susi Air. Bikin 3 halaman: Sign In, Home (dashboard), sama Schedule (kalender duty).
+Technical test for Frontend Developer in Susi Air, created with 3 pages: Sign In, Home (dashboard), and Schedule.
 
-Project Nuxt-nya ada di folder `susi-air-app/`, jadi `cd` ke situ dulu sebelum jalanin command apapun.
-
+Nuxt project in folder  `susi-air-app/`, so change directory`cd`if want run anything command. 
 ## Tech Stack
 
 - Nuxt 4 (Composition API, `<script setup>`)
 - TypeScript
-- Pinia buat state management
+- Pinia for state management
 - SCSS
-- lucide-vue-next buat icon-icon
+- lucide-vue-next for icon-icon
 
 No Backend, just use JSON file from `public/data/`.
 
